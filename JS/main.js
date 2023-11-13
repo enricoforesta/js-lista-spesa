@@ -32,6 +32,9 @@ while (i < spesa.length - 1) {
     i++;
     const prodotto = document.createElement("li");
     prodotto.textContent = spesa[i];
+    prodotto.addEventListener("click", function(){
+        prodotto.classList.toggle("prodotto")
+    })
     lista.append(prodotto);
 }
 
